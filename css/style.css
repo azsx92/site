@@ -1,0 +1,27 @@
+/* 전체 영역 */
+* {
+    margin: 0 ; /* 마진값 초기화*/
+    padding : 0; /* 패딩값 초기화 */
+    box-sizing: border-box; /*박스 영역은 테두리까지 지정 */
+}
+
+#container {
+    margin : 0 auto; /* 화전 중앙에 배치 */
+    width : 1200px; /* 너비 지정 */ 
+}
+/* 헤더 영역 */
+
+header {
+    width: 100%; /* 너비 */
+    height: 100px; /* 높이 */
+    background-color: blue;
+}
+
+/* 로고 영역  */
+#logo {
+    float: left; /* 왼쪽으로 프롤팅 */
+    width: 250px; /* 너비 */
+    height: 100px; /* 높이 */
+    background-color: indigo;
+}
+
