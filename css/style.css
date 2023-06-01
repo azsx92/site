@@ -25,3 +25,49 @@ header {
     background-color: indigo;
 }
 
+/* 네비게이션  영역 */
+nav {
+    float: right; /* 오른쪽으로 플로팅 */
+    width: 900px; /* 너비 */
+    height: 100px; /* 내비게이션 영역 높이 */
+    background-color: green;
+}
+
+
+/* 이미지 슬라이드 쇼 영역 */
+#slideShow {
+    clear: both; /* 플로팅 해제 */
+    width: 100%; /* 너비 */
+    height: 300px;/* 높이 */
+    background-color: orange;
+    overflow: hidden; /* 영역 넘치는 감춤 */
+}
+
+/* 콘텐츠 영역 */
+#contents {
+    width: 100%; /* 너비 */
+    height: 300px; /* 높이 */
+}
+
+/* 탭 메뉴 영역 */
+#tabMenu{
+    float: left; /* 왼쪽으로 플로팅 */
+    width: 600px; /* 너비 */
+    height: 100%; /* 내비게이션 영역 높이 */
+    background-color: violet;
+}
+
+/* 퀵 링크 영역 */
+
+#links{
+    float: right; /* 오른쪽으로 플로팅 */
+    width: 600px; /* 너비 */
+    height: 100%; /* 높이 */
+    background-color: skyblue;
+}
+
+footer {
+    width: 100%; /* 너비 */
+    height: 100px; /* 내비게이션 영역 높이 */
+    background-color: gray;
+}
