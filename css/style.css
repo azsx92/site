@@ -102,7 +102,6 @@ button:focus {
 #contents {
     width: 100%; /* 너비 */
     height: 300px; /* 높이 */
-    background-color: violet;
 }
 
 /* 탭 메뉴 영역 */
@@ -159,6 +158,67 @@ button:focus {
 
 #topMenu > li > ul > li > a:hover {
     color: #f00 /* 서브메뉴 마우스 오버하면 색상 바꾸기 */
+}
+
+/* tapMenu Scope */
+#tabMenu {
+    float: left;
+    width: 600px;
+    height: 100%;
+    margin-top: 10px; /* 탭 메뉴 위쪽에 여백 두기 */
+}
+
+#tabMenu input[type="radio"] {
+    display: none;
+}
+
+#tapMenu label {
+    display: inline-block; /* 탭을 가로로 배치 */
+    margin: 0 0;   /* 마진 */
+    padding: 15px 25px;  /* 패딩 */
+    font-weight: 600;    /* font bord */
+    text-align: center;  /* font sort */
+    color:#aaa;         /* 폰트 색상 */
+    border: 1px solid transparent; /* 테두리 스타일 */
+}
+
+#tabMenu Label :hover { /* 마우스 포인터를  올렸을 때 탭 제목 스타일 */
+    color : #222;
+    cursor : pointer;
+}
+
+#tabMenu input:checked + label { /* 활성화된 탭 제목 스타일 */
+    color: #b00;
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+
+.tabContent{ /*  탭 내용 스타일 */
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+.tabContent h2 {
+    display: none;
+}
+
+#notice ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+#notice ul li {
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+#gallery ul li {
+    display: inline; /* 이미지 가로로 배치 */
+}
+
+#tab1:checked ~ #notice,
+#tab2:checked ~ #gallery {
+    display:block;
 }
 
 /* 퀵 링크 영역 */
