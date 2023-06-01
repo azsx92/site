@@ -227,8 +227,48 @@ button:focus {
     float: right; /* 오른쪽으로 플로팅 */
     width: 600px; /* 너비 */
     height: 100%; /* 높이 */
-    background-color: skyblue;
 }
+
+#links ul {
+    padding: 0; /* 패딩 */
+    overflow: hidden; /* 넘치는 항목은 감춤 */
+}
+
+#links ul li {
+    float: left; 
+    width: 33%; /* 세 항목의 영역을 균일하게 지정 */
+    text-align: center;
+    margin: 10px 0;
+}
+
+#links ul li a span {
+    display: block; /* 블록 레벨로 지정 */
+    margin: 0 auto; /* 가운데 배치 */
+    width: 150px; 
+    height: 150px;
+    border-radius: 100%;/* 테두리를 둥글게 지정. border0radius: 150px도 가능 */
+    border: 1px solid #ddd; /* ㅌㅔ두리 스타일 */
+    line-height: 150px; /* 수직으로 중간에 오게 */
+}
+#quick-icon1 {
+background-image:url('..images/icon-1.jpg');
+}
+ 
+#quick-icon2 {
+  background-image:url('..images/icon-2.jpg');
+}
+
+#quick-icon3 {
+   background-image: url('..images/icon-3.jpg');
+}
+
+#link ul li a p {
+    margin-top: 15px; /* 위쪽 마진 */;
+    font-weight: 600 ; /* 폰트 굵기 */
+    color: #666;     /* 폰트 색상 */
+}
+
+
 
 footer {
     width: 100%; /* 너비 */
