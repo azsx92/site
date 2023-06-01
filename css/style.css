@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 #container {
     margin : 0 auto; /* 화전 중앙에 배치 */
     width : 1200px; /* 너비 지정 */ 
@@ -45,7 +49,7 @@ nav {
     float: right; /* 오른쪽으로 플로팅 */
     width: 900px; /* 너비 */
     height: 100px; /* 내비게이션 영역 높이 */
-    background-color: green;
+    padding-top: 40px; /* 메뉴를 아래로 내리기 위해 */
 }
 
 
@@ -62,14 +66,63 @@ nav {
 #contents {
     width: 100%; /* 너비 */
     height: 300px; /* 높이 */
+    background-color: violet;
 }
 
 /* 탭 메뉴 영역 */
-#tabMenu{
-    float: left; /* 왼쪽으로 플로팅 */
-    width: 600px; /* 너비 */
-    height: 100%; /* 내비게이션 영역 높이 */
-    background-color: violet;
+#topMenu{
+    height: 60px;    
+}
+
+#topMenu > li {
+    float: left; /* 메뉴 항목을 왼쪽으로 플로팅 */
+    position: relative; /* 서브메뉴를 absolute로 만들기 위해 부모 요소를 relative로 지정 */
+}
+
+#topMenu > li > a {
+    display: block; /* 링쿠 택스트는  */
+    color: #fff; /* 하얀색 */
+    font-weight: 600;  /* 폰트 굵기 */
+    text-shadow: 0 1px #07c; /* 그림 */
+    padding: 20px 60px;       /* 패딩  */
+}
+
+#topMenu > li > a > span {
+    font-size: 0.5em;  /* 서브메뉴가  */
+}
+
+#topMenu > li > a:hover {
+    color: #000; /* 마우스 포인터를  */
+    text-shadow: 0 -1px #07c; /* 글자가 굵어지지 않도록 지정 */
+}
+
+#topMenu > li > ul {
+    display: none; /* 서브메뉴를 처음에는 감춤 */
+    position:absolute;  /* 서브메뉴 포지셔닝 */
+    width: 160px;
+    background-color: rgba(255, 255, 255, 0.6); /* 배경 투명색 지정 */
+    left: 0;
+    margin: 0;
+    left: 20px;
+}
+
+#topMenu > li > ul > li {
+    padding: 10px 10px 10px 30px ; /* 서브메뉴 항목 지정 */
+}
+
+#topMenu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+}
+
+#topMenu > li:hover > ul {
+    display: block; /* 메인 메뉴 항목 위로 오버하면 서브메뉴 표시 */
+    z-index: 10 ; /* 슬라이드 쇼에 가리지 않게 조절 */
+}
+
+#topMenu > li > ul > li > a:hover {
+    color: #f00 /* 서브메뉴 마우스 오버하면 색상 바꾸기 */
 }
 
 /* 퀵 링크 영역 */
