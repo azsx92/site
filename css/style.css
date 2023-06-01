@@ -102,6 +102,7 @@ button:focus {
 #contents {
     width: 100%; /* 너비 */
     height: 300px; /* 높이 */
+    margin-top: 20px; /* margin add */
 }
 
 /* 탭 메뉴 영역 */
@@ -227,6 +228,7 @@ button:focus {
     float: right; /* 오른쪽으로 플로팅 */
     width: 600px; /* 너비 */
     height: 100%; /* 높이 */
+    margin-top: 20px; /* margin add */
 }
 
 #links ul {
@@ -250,16 +252,15 @@ button:focus {
     border: 1px solid #ddd; /* ㅌㅔ두리 스타일 */
     line-height: 150px; /* 수직으로 중간에 오게 */
 }
-#quick-icon1 {
-background-image:url('..images/icon-1.jpg');
-}
- 
-#quick-icon2 {
-  background-image:url('..images/icon-2.jpg');
-}
 
+#quick-icon1 {
+  background-image:url('../images/icon-1.jpg'); 
+}
+#quick-icon2 {
+  background-image:url('../images/icon-2.jpg'); 
+}
 #quick-icon3 {
-   background-image: url('..images/icon-3.jpg');
+  background-image:url('../images/icon-3.jpg'); 
 }
 
 #link ul li a p {
